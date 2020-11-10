@@ -10,6 +10,9 @@
     <div class="grid-container"> 
         <header class="header">
             <div class="brand">
+                <button onClick="openMenu()">
+                    &#9776;
+                </button>
                 <a href="index.html">Jose Shop</a>
             </div>
             <div class="header-links">
@@ -18,12 +21,26 @@
             </div>
         </header>
 
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Shopping Categories</h3>
+            <button class="sidebar-close-button" onClick="closeMenu()">x</button>
+            <ul>
+                <li>
+                    <a href="index.html">Pants</a>
+                </li>
+                <li>
+                    <a href="index.html">Shirts</a>
+                </li>
+            </ul>
+        </aside>
+
         <main class="main"> 
             <div class="content">
                 <ul class="products">
                     <li>
                         <div class="product">
-                            <img class="product-image" src="images/d1.jpg" alt="product">
+                            <img class="product-image" src="images/shirt.jpg" alt="product">
                             <div class="product-name">
                                 <a href="product.html">Slim Shirt</a>
                             </div>
@@ -34,7 +51,7 @@
                     </li>
                     <li>
                         <div class="product">
-                            <img class="product-image" src="images/d1.jpg" alt="product">
+                            <img class="product-image" src="images/shirt.jpg" alt="product">
                             <div class="product-name">
                                 <a href="product.html">Slim Shirt</a>
                             </div>
@@ -84,5 +101,19 @@
             All rights reserved
         </footer>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+    </script> 
+
+
+    <script>
+        function openMenu() {
+            document.querySelector(".sidebar").classList.add("open");
+        }
+        function closeMenu() {
+            document.querySelector(".sidebar").classList.remove("open");
+        }
+    </script>
+
 </body>
 </html>
