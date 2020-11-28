@@ -1,0 +1,8 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env"
+        ]
+        // This will help run the EA6 code in the terminal
+    ]
+}

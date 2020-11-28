@@ -1,0 +1,28 @@
+{
+  "name": "my-amazing-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch backend --exec babel-node backend/server.js"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseph-tg/my-amazing-shop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joseph-tg/my-amazing-shop/issues"
+  },
+  "homepage": "https://github.com/joseph-tg/my-amazing-shop#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "nodemon": "^2.0.6"
+  }
+}
